@@ -8,7 +8,14 @@ router = fastapi.APIRouter()
 @template(template_file='home/index.pt')
 def index(user: str = 'anon'):
     return {
-        'user_name': user if user else "anon"
+        'package_count': 315_000,
+        'release_count': 2_343_124,
+        'user_count': 73_234,
+        'packages': [
+            {'id': 'skynet', 'summary': "Totally not going to take over the world"},
+            {'id': 'dot_nukem', 'summary': "The safest malware"},
+            {'id': 'hello_world', 'summary': "World never says hello back"}
+        ]
     }
 
 
