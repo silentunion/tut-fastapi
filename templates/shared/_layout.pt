@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PyPL</title>
+    <style>
+        body {
+            background: #cfffcf;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>PyPL Site</h1>
+    <div>
+        <a href="/">home</a>
+        <a href="/about">about</a>
+    </div>
+
+    <div class="main-content">
+        <div metal:define-slot="content" tal:omit-tag="True">No content</div>
+    </div>
+
+    <footer>
+        Footer: Thanks for visiting
+    </footer>
+
+</body>
+</html>
